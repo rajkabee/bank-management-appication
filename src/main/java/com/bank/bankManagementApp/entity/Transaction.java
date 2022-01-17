@@ -1,6 +1,6 @@
 package com.bank.bankManagementApp.entity;
 
-import java.sql.Date;
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,22 +13,21 @@ import org.springframework.data.annotation.LastModifiedDate;
 import lombok.Data;
 @Data
 @Entity
-public class Address {
+public class Transaction {
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private long address_id;
-	private String country;
-	private String state;
-	private String district;
-	private String municipality;
-	private int ward;
-	private String street;
-	private int POB_no;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	long transaction_id;
+	
+	String transaction_type;
+	String medium;
+	
+	long from_account;
+	long to_account;
+	
 	@CreatedDate
 	Date date_created;
 	@LastModifiedDate
 	Date date_updated;
 	
-
 	
 }

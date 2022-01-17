@@ -18,7 +18,7 @@ import lombok.Data;
 
 @Data
 @Entity
-public class User {
+public class Customer {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long user_id;
@@ -37,7 +37,7 @@ public class User {
 	@OneToOne
 	private Role role;
 	@OneToMany
-	private List<DBFile> profilePic;
+	private List<DBFile> files;
 	
 	@CreatedDate
 	Date date_created;

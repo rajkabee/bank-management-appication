@@ -13,22 +13,20 @@ import org.springframework.data.annotation.LastModifiedDate;
 import lombok.Data;
 @Data
 @Entity
-public class Address {
+public class BankAccount {
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private long address_id;
-	private String country;
-	private String state;
-	private String district;
-	private String municipality;
-	private int ward;
-	private String street;
-	private int POB_no;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	long account_id;
+	long account_number;
+	String account_type;
+	Customer customer;
+	boolean is_active;
 	@CreatedDate
 	Date date_created;
 	@LastModifiedDate
 	Date date_updated;
-	
 
+	
+	
 	
 }
