@@ -21,16 +21,17 @@ import lombok.Data;
 public class User {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private long user_id;
-	private String first_name;
-	private String middle_name;
-	private String last_name;
+	private String userId;
+	private String firstName;
+	private String middleName;
+	private String lastName;
 	private String contact;
 	private String email;
 	private String gender;
 	private Date dob;
+	private String username;
 	private String password;
-	private boolean active;
+	private boolean userStatus;
 	
 	@OneToOne
 	private Address address;

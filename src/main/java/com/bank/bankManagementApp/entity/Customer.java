@@ -21,10 +21,9 @@ import lombok.Data;
 public class Customer {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private long user_id;
-	private String first_name;
-	private String middle_name;
-	private String last_name;
+	private String userId;
+	private String firstName;
+	private String lastName;
 	private String contact;
 	private String email;
 	private String gender;

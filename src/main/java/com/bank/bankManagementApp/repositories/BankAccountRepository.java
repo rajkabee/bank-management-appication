@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.bank.bankManagementApp.entity.BankAccount;
 
 @Repository
-public interface BankAccountRepository extends JpaRepository<BankAccount, Long>{
+public interface BankAccountRepository extends JpaRepository<BankAccount, String>{
 
 }

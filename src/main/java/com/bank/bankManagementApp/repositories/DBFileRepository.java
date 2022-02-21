@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.bank.bankManagementApp.entity.DBFile;
 
 @Repository
-public interface DBFileRepository extends JpaRepository<DBFile, Integer>{
+public interface DBFileRepository extends JpaRepository<DBFile, String>{
 
 }

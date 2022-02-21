@@ -16,7 +16,7 @@ import lombok.Data;
 public class Address {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private long address_id;
+	private String address_id;
 	private String country;
 	private String state;
 	private String district;

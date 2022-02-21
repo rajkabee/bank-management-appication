@@ -16,13 +16,13 @@ import lombok.Data;
 public class Transaction {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	long transaction_id;
+	String transaction_id;
 	
 	String transaction_type;
 	String medium;
 	
-	long from_account;
-	long to_account;
+	String fromAccountId;
+	String toAccountId;
 	
 	@CreatedDate
 	Date date_created;

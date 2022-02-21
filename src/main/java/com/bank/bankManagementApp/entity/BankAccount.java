@@ -16,8 +16,8 @@ import lombok.Data;
 public class BankAccount {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	long account_id;
-	long account_number;
+	String account_id;
+	String account_number;
 	String account_type;
 	Customer customer;
 	boolean is_active;
